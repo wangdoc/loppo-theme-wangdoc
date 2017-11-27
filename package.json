@@ -1,0 +1,28 @@
+{
+  "name": "loppo-theme-wangdoc",
+  "version": "0.0.0",
+  "description": "a theme of Loppo used by Wangdoc",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run build-css",
+    "postpublish": "npm run update-bulma",
+    "update-bulma": "npm update bulma && cp -rf ./node_modules/bulma/bulma.sass ./node_modules/bulma/sass .",
+    "clean-css": "rm -rf ./theme/assets/css/*",
+    "build-css": "npm run clean-css && npm run build-sass && npm run build-autoprefix && npm run build-uglify",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output theme/assets/css/app.css theme/assets/css/app.css",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/wangdoc.sass theme/assets/css/app.css",
+    "build-uglify": "cleancss --source-map -o theme/assets/css/app.min.css theme/assets/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruan Yifeng",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "bulma": "^0.6.1",
+    "clean-css-cli": "^4.1.10",
+    "husky": "^0.14.3",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
+  }
+}

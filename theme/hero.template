@@ -1,0 +1,11 @@
+<section class="hero is-link">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title"><%= site %></h1>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="container">
+    </div>
+  </div>
+</secton>

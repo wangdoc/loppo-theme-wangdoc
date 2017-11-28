@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wangdoc</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/app.min.css">
+    <title><%= current_path === '/' ? '' : page_title + ' - ' %><%= site %> - 网道</title>
+    <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" -->
+    <link rel="stylesheet" href="<%= relative_root_path %>assets/css/app.min.css">
   </head>
   <body>
+    <% include nav %>
+    <% include hero %>
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -18,5 +20,6 @@
       </p>
     </div>
   </section>
+    <% include foot %>
   </body>
 </html>

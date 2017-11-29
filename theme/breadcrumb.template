@@ -1,0 +1,7 @@
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <% breadcrumbOrigin.forEach(item => { %>
+    <li><a href="<%= item.path %>"><%= item.text %></a></li>
+    <% }) %>
+  </ul>
+</nav>

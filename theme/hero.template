@@ -6,6 +6,7 @@
   </div>
   <div class="hero-foot">
     <div class="container">
+      <% include breadcrumb %>
     </div>
   </div>
 </section>

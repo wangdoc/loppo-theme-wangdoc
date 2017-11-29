@@ -12,6 +12,7 @@
     <% include hero %>
   <section class="section">
     <div class="container">
+      <% include breadcrumb %>
       <h1 class="title">
         Hello World
       </h1>

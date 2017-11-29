@@ -1,7 +1,7 @@
 <nav class="navbar is-light" role="navigation" aria-label="main navigation">
   <div class="container">
   <div class="navbar-brand">
-    <a class="navbar-item title is-4">
+    <a class="navbar-item title has-text-grey has-text-weight-light is-5">
       网道 / WangDoc.com
     </a>
   </div>

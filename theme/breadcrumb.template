@@ -1,7 +1,17 @@
 <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
-    <% breadcrumbOrigin.forEach(item => { %>
-    <li><a href="<%= item.path %>"><%= item.text %></a></li>
+    <% breadcrumbOrigin.forEach((item, i) => { %>
+
+    <% if (i === 0) { %>
+      <% item.text = "首页"; %>
+    <% } %>
+
+    <% if (i === breadcrumbOrigin.length - 1) { %>
+      <li class="is-active"><a class="has-text-grey" href="<%= relative_root_path %><%= item.path %>"><%= item.text %></a></li>
+    <% } else { %>
+      <li><a href="<%= relative_root_path %><%= item.path %>"><%= item.text %></a></li>
+    <% } %>
+
     <% }) %>
   </ul>
 </nav>

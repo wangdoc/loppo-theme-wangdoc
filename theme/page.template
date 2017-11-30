@@ -12,13 +12,24 @@
     <% include hero %>
   <section class="section">
     <div class="container">
-      <% include breadcrumb %>
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+
+<div class="columns">
+  <div class="column is-8">
+    <% include breadcrumb %>
+    <div class="content is-medium">
+      <% if (current_path !== '/') { %>
+        <h1 class="title"><%= page_title %></h1>
+      <% } %>
+      <%= content %>
+    </div>
+  </div>
+
+  <div class="column is-4">
+    <aside class="menu">
+    </aside>
+  </div>
+</div>
+
     </div>
   </section>
     <% include foot %>

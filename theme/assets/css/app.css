@@ -10747,4 +10747,16 @@ label.panel-block:hover {
 .hljs-meta {
   color: #75715e;
 }
+
+.article h1 {
+  font-size: 3rem;
+}
+
+.article h2 {
+  font-size: 2.5rem;
+}
+
+.article h3 {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=app.css.map */

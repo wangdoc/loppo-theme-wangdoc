@@ -11,3 +11,35 @@
     font-size: $size-2
   h3
     font-size: $size-3
+
+/*
+ * article-toc
+ */
+
+.article-toc
+  border: 1px solid #aaa;
+  background-color: #f9f9f9;
+  display: table;
+  padding: 1rem;
+
+.article-toc ul
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+.article-toc > ul
+  counter-reset: articleTOCFirstLevel;
+
+.article-toc > ul > li
+  list-style-type: none;
+  counter-reset: articleTOCSecondLevel;
+
+.article-toc > ul > li::before
+  counter-increment: articleTOCFirstLevel;
+  content: counter(articleTOCFirstLevel) '. ';
+
+.article-toc > ul > li > ul > li
+  list-style-type: none;
+
+.article-toc > ul > li > ul > li::before
+  counter-increment: articleTOCSecondLevel;
+  content: counter(articleTOCFirstLevel) '.' counter(articleTOCSecondLevel) ' ';

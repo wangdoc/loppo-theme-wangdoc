@@ -5,9 +5,9 @@
 @import "./highlight"
 
 /*
- * article titles
+ * main titles
  */
-.article
+.main
   h1
     font-size: $size-1
   h2
@@ -15,6 +15,9 @@
   h3
     font-size: $size-3
 
+/*
+ * article title counter
+ */
 .article .content
   counter-reset: firstLevelTitle;
 
@@ -38,7 +41,6 @@
 /*
  * article-toc
  */
-
 .article-toc
   border: 1px solid #aaa;
   background-color: #f9f9f9;

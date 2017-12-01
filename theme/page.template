@@ -11,9 +11,9 @@
     <% include nav %>
     <% include hero %>
 <% if (current_path !== '/') { %>
-  <section class="section article">
+  <section class="section main article">
 <% } else { %>
-  <section class="section homepage">
+  <section class="section main homepage">
 <% } %>
     <div class="container">
 

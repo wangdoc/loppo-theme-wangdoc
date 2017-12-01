@@ -10748,6 +10748,9 @@ label.panel-block:hover {
   color: #75715e;
 }
 
+/*
+ * article titles
+ */
 .article h1 {
   font-size: 3rem;
 }
@@ -10758,6 +10761,32 @@ label.panel-block:hover {
 
 .article h3 {
   font-size: 2rem;
+}
+
+.article {
+  counter-reset: firstLevelTitle;
+}
+
+.article > h2::before {
+  counter-increment: firstLevelTitle;
+  content: counter(firstLevelTitle) ". ";
+}
+
+.article > h2:only-of-type::before {
+  content: '';
+}
+
+.article > h2 {
+  counter-reset: secondLevelTitle;
+}
+
+.article > h3::before {
+  counter-increment: secondLevelTitle;
+  content: counter(firstLevelTitle) "." counter(secondLevelTitle) " ";
+}
+
+.article .first-level-collapse {
+  display: none;
 }
 
 /*

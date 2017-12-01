@@ -1,13 +1,5 @@
-var setMinHeight = require('./setMinHeight');
-var insertArticleToc = require('./insertArticleToc');
-
-/* set content's min-height */
-setMinHeight();
-
 /* insert article's toc */
-insertArticleToc();
-/*
-(function () {
+function insertArticleToc() {
   var article = document.querySelector('article.content');
   var firstH2Title = article.querySelector('h2');
   var h2TitleNumber = article.querySelectorAll('h2');
@@ -18,14 +10,6 @@ insertArticleToc();
     toc_div.innerHTML = '<h3>目录</h3>' + LOPPO.article_toc;
     article.insertBefore(toc_div, firstH2Title);
   }
-})();
-*/
+}
 
-/* hashchange handler */
-window.onhashchange = function () {
-  var hash = location.hash;
-  if (!hash) return;
-  var nav = document.querySelector('.navbar');
-  var navHeight = nav.getBoundingClientRect().height;
-  window.scrollBy(0, -1 * navHeight);
-};
+module.exports = insertArticleToc;

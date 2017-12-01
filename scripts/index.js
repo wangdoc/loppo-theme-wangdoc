@@ -1,4 +1,5 @@
 /* set content's min-height */
+/*
 (function () {
   var content = document.querySelector('article.content');
   var navbarHeight =
@@ -12,7 +13,7 @@
     - parseInt(footHeight);
   content.style.minHeight = minHeight + 'px';
 })();
-
+*/
 
 /* insert article's toc */
 (function () {
@@ -23,7 +24,7 @@
   if (firstH2Title && LOPPO.article_toc && h2TitleNumber.length >= 2) {
     var toc_div = document.createElement('div');
     toc_div.setAttribute('class', 'article-toc');
-    toc_div.innerHTML = '<h3>Contents</h3>' + LOPPO.article_toc;
+    toc_div.innerHTML = '<h3>目录</h3>' + LOPPO.article_toc;
     article.insertBefore(toc_div, firstH2Title);
   }
 })();

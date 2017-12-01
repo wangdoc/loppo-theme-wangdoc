@@ -4,7 +4,7 @@
   "description": "a theme of Loppo used by Wangdoc",
   "main": "index.js",
   "scripts": {
-    "precommit": "npm run build-css",
+    "precommit": "npm run build-css && npm run build-js",
     "postpublish": "npm run update-bulma",
     "update-bulma": "npm update bulma && cp -rf ./node_modules/bulma/bulma.sass ./node_modules/bulma/sass .",
     "clean-css": "rm -rf ./theme/assets/css/*",
@@ -12,6 +12,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output theme/assets/css/app.css theme/assets/css/app.css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/wangdoc.sass theme/assets/css/app.css",
     "build-uglify": "cleancss --source-map -o theme/assets/css/app.min.css theme/assets/css/app.css",
+    "build-js": "mkdir -p theme/assets/js && browserify scripts/index.js | uglifyjs -c > theme/assets/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,11 +29,13 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "browserify": "^14.5.0",
     "bulma": "^0.6.1",
     "clean-css-cli": "^4.1.10",
     "husky": "^0.14.3",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "uglifyify": "^4.0.5"
   }
 }

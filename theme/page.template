@@ -16,12 +16,12 @@
 <div class="columns">
   <div class="column is-8">
     <% include breadcrumb %>
-    <div class="content is-medium">
+    <article class="content is-medium">
       <% if (current_path !== '/') { %>
         <h1 class="title"><%= page_title %></h1>
       <% } %>
       <%= content %>
-    </div>
+    </article>
   </div>
 
   <div class="column is-4">
@@ -33,5 +33,6 @@
     </div>
   </section>
     <% include foot %>
+    <% include script %>
   </body>
 </html>

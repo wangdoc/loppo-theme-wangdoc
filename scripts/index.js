@@ -1,6 +1,10 @@
 /* set content's min-height */
 (function () {
   var content = document.querySelector('.article');
+  if (!content) {
+    content = document.querySelector('.homepage');
+  }
+
   var navbarHeight =
     window.getComputedStyle(document.querySelector('.navbar'))
     .getPropertyValue('height');

@@ -1,4 +1,9 @@
+var setMinHeight = require('./setMinHeight');
+
+setMinHeight();
+
 /* set content's min-height */
+/*
 (function () {
   var content = document.querySelector('.article');
   if (!content) {
@@ -25,6 +30,7 @@
     - parseInt(footHeight);
   content.style.minHeight = minHeight + 'px';
 })();
+*/
 
 /* insert article's toc */
 (function () {

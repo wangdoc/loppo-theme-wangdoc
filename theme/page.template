@@ -10,7 +10,7 @@
   <body>
     <% include nav %>
     <% include hero %>
-  <section class="section">
+  <section class="section article">
     <div class="container">
 
 <div class="columns">

@@ -10,7 +10,11 @@
   <body>
     <% include nav %>
     <% include hero %>
+<% if (current_path !== '/') { %>
   <section class="section article">
+<% } else { %>
+  <section class="section homepage">
+<% } %>
     <div class="container">
 
 <div class="columns">

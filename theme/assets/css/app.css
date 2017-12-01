@@ -10763,29 +10763,29 @@ label.panel-block:hover {
   font-size: 2rem;
 }
 
-.article {
+.article .content {
   counter-reset: firstLevelTitle;
 }
 
-.article > h2::before {
+.article .content > h2::before {
   counter-increment: firstLevelTitle;
   content: counter(firstLevelTitle) ". ";
 }
 
-.article > h2:only-of-type::before {
+.article .content > h2:only-of-type::before {
   content: '';
 }
 
-.article > h2 {
+.article .content > h2 {
   counter-reset: secondLevelTitle;
 }
 
-.article > h3::before {
+.article .content > h3::before {
   counter-increment: secondLevelTitle;
   content: counter(firstLevelTitle) "." counter(secondLevelTitle) " ";
 }
 
-.article .first-level-collapse {
+.article .content .first-level-collapse {
   display: none;
 }
 

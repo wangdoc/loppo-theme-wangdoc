@@ -10749,20 +10749,23 @@ label.panel-block:hover {
 }
 
 /*
- * article titles
+ * main titles
  */
-.article h1 {
+.main h1 {
   font-size: 3rem;
 }
 
-.article h2 {
+.main h2 {
   font-size: 2.5rem;
 }
 
-.article h3 {
+.main h3 {
   font-size: 2rem;
 }
 
+/*
+ * article title counter
+ */
 .article .content {
   counter-reset: firstLevelTitle;
 }

@@ -1,0 +1,26 @@
+<% if (current_path !== '/') { %>
+  <section class="section main article">
+<% } else { %>
+  <section class="section main homepage">
+<% } %>
+    <div class="container">
+
+<div class="columns">
+  <div class="column is-8">
+    <% include breadcrumb %>
+    <article class="content is-medium">
+      <% if (current_path !== '/') { %>
+        <h1 class="title"><%= page_title %></h1>
+      <% } %>
+      <%= content %>
+    </article>
+  </div>
+
+  <div class="column is-4">
+    <aside class="menu">
+    </aside>
+  </div>
+</div>
+
+    </div>
+  </section>

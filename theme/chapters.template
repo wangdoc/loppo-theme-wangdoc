@@ -1,0 +1,24 @@
+<nav class="panel is-medium">
+  <p class="panel-heading">
+    <%= site %>
+  </p>
+  <div class="panel-block">
+  <aside class="menu">
+  <p class="menu-label">
+  </p>
+  <ul class="menu-list">
+    <% chaptersOrigin.forEach(i => { %>
+      <li>
+        <% if (i.origin === current_path) { %>
+          <a href="<%= relative_root_path %><%= i.path %>" class="is-active"><%= i.text %></a>
+        <% } else { %>
+          <a href="<%= relative_root_path %><%= i.path %>"><%= i.text %></a>
+        <% } %>
+      </li>
+    <% }) %>
+  </ul>
+  </aside>
+  </div>
+</nav>
+
+

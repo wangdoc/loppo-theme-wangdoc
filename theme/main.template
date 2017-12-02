@@ -9,16 +9,17 @@
   <div class="column is-8">
     <% include breadcrumb %>
     <article class="content is-medium">
-      <% if (current_path !== '/') { %>
+      <% if (current_path === '/') { %>
+        <%= content %>
+      <% } else { %>
         <h1 class="title"><%= page_title %></h1>
+        <%= content %>
       <% } %>
-      <%= content %>
     </article>
   </div>
 
   <div class="column is-4">
-    <aside class="menu">
-    </aside>
+    <% include chapters %>
   </div>
 </div>
 

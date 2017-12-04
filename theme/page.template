@@ -6,6 +6,7 @@
     <title><%= current_path === '/' ? '' : page_title + ' - ' %><%= site %> - 网道</title>
     <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" -->
     <link rel="stylesheet" href="<%= relative_root_path %>assets/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
   </head>
   <body>
     <% include nav %>

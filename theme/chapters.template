@@ -1,4 +1,4 @@
-<nav class="panel is-medium">
+<nav class="panel panel-menu is-medium">
   <p class="panel-heading">
     <%= site %>
   </p>
@@ -10,11 +10,26 @@
     <% chaptersOrigin.forEach(i => { %>
       <li>
         <% if (i.origin === current_path) { %>
-          <a href="<%= relative_root_path %><%= i.path %>" class="is-active"><%= i.text %></a>
+          <a href="<%= relative_root_path %><%= i.path %>" class="is-active">
         <% } else { %>
-          <a href="<%= relative_root_path %><%= i.path %>"><%= i.text %></a>
+          <a href="<%= relative_root_path %><%= i.path %>">
         <% } %>
+          <span class="icon">
+          <% if (i.nextLevelBegins) { %>
+            <i class="fa fa-caret-down"></i>
+          <% } %>
+          </span>
+            <%= i.text %>
+          </a>
+        <% if (i.nextLevelBegins) { %>
+      <ul>
+        <% } else { %>
       </li>
+        <% } %>
+      <% if (i.currentLevelEnds) { %>
+        <%= '</ul></li>'.repeat(i.currentLevelEndNum) %>
+      <% } else { %>
+      <% } %>
     <% }) %>
   </ul>
   </aside>

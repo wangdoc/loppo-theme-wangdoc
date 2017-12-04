@@ -9,7 +9,7 @@
   <div class="column is-8">
     <% include breadcrumb %>
     <article class="content is-medium">
-      <% if (current_path === '/') { %>
+      <% if (isHomepage) { %>
         <%= content %>
       <% } else { %>
         <h1 class="title"><%= page_title %></h1>

@@ -10806,6 +10806,13 @@ article.content h3:hover a {
 }
 
 /*
+ * previous-next nav
+ */
+article.content + .level {
+  board: 1px solid #ffdd57;
+}
+
+/*
  * article-toc
  */
 .article-toc {

@@ -28,7 +28,7 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^7.2.1",
     "browserify": "^14.5.0",
     "bulma": "^0.6.1",
     "clean-css-cli": "^4.1.10",

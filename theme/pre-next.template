@@ -1,4 +1,5 @@
 <nav class="level">
+  <div class="container">
   <!-- Left side -->
   <div class="level-left">
     <p class="level-item">
@@ -20,5 +21,6 @@
         </a>
       <% } %>
     </p>
+  </div>
   </div>
 </nav>

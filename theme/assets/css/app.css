@@ -10813,6 +10813,12 @@ article.content h3:hover a {
   border: 1px solid #ffdd57;
 }
 
+.level-previous-next .level-left, .level-previous-next .level-right {
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /*
  * article-toc
  */

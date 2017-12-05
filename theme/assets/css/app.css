@@ -10793,6 +10793,19 @@ label.panel-block:hover {
 }
 
 /*
+ * article-title
+ */
+article.content h2 a,
+article.content h3 a {
+  display: none;
+}
+
+article.content h2 a:hover,
+article.content h3 a:hover {
+  display: block;
+}
+
+/*
  * article-toc
  */
 .article-toc {

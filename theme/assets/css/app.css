@@ -10810,7 +10810,7 @@ article.content h3:hover a {
  */
 .level-previous-next {
   padding: 1em;
-  border: 1px solid #ffdd57;
+  background: whitesmoke;
 }
 
 .level-previous-next .level-left, .level-previous-next .level-right {

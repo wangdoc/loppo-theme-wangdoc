@@ -10808,7 +10808,8 @@ article.content h3:hover a {
 /*
  * previous-next nav
  */
-article.content + .level {
+.level-previous-next {
+  paddind: 1em;
   border: 1px solid #ffdd57;
 }
 

@@ -1,5 +1,4 @@
-<nav class="level">
-  <div class="container">
+<nav class="level level-previous-next is-size-5">
   <!-- Left side -->
   <div class="level-left">
     <p class="level-item">
@@ -21,6 +20,5 @@
         </a>
       <% } %>
     </p>
-  </div>
   </div>
 </nav>

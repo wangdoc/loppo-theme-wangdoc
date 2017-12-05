@@ -10819,6 +10819,12 @@ article.content h3:hover a {
   text-overflow: ellipsis;
 }
 
+.level-previous-next .level-left .level-item, .level-previous-next .level-right .level-item {
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
+}
+
 /*
  * article-toc
  */

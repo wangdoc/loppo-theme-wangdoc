@@ -7,9 +7,19 @@
     <% } %>
 
     <% if (i === breadcrumbOrigin.length - 1) { %>
-      <li class="is-active"><a class="has-text-grey" href="<%= relative_root_path %><%= item.path %>"><%= item.text %></a></li>
+      <li class="is-active">
+        <a class="has-text-grey" href="<%= relative_root_path %><%= item.path %>">
+          <% if (i===0) { %><span class="icon"><i class="fa fa-home"></i></span><% } %>
+          <%= item.text %>
+        </a>
+      </li>
     <% } else { %>
-      <li><a href="<%= relative_root_path %><%= item.path %>"><%= item.text %></a></li>
+      <li>
+        <a href="<%= relative_root_path %><%= item.path %>">
+          <% if (i===0) { %><span class="icon"><i class="fa fa-home"></i></span><% } %>
+          <%= item.text %>
+        </a>
+      </li>
     <% } %>
 
     <% }) %>

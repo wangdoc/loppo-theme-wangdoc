@@ -10808,7 +10808,8 @@ article.content h3:hover a {
 /*
  * breadcrumb icon
  */
-.breadcrumb .icon {
+.breadcrumb .icon:last-child,
+.breadcrumb .icon:first-child {
   margin-left: 0px;
   margin-right: 0px;
 }

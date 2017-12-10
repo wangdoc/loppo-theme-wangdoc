@@ -8,7 +8,7 @@
 <div class="columns">
   <div class="column is-8">
     <% include breadcrumb %>
-    <article class="content is-medium">
+    <article class="content">
       <% if (isHomepage) { %>
         <%= content %>
       <% } else { %>

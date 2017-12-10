@@ -1,4 +1,4 @@
-<nav class="panel panel-menu is-medium">
+<nav class="panel panel-menu">
   <p class="panel-heading">
     <%= site %>
   </p>

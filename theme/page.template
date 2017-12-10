@@ -11,7 +11,7 @@
   </head>
   <body>
     <% include nav %>
-    <% include hero %>
+    <% /* include hero */ %>
     <% include main %>
     <% include foot %>
     <% include script %>

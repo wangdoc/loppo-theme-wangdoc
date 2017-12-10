@@ -19,7 +19,7 @@
     <% include pre-next %>
   </div>
 
-  <div class="column is-4">
+  <div class="column is-3 is-offset-1">
     <% include chapters %>
   </div>
 </div>

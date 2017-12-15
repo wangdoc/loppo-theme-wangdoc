@@ -10870,4 +10870,10 @@ article.content h3:hover a {
 .panel-menu .panel-block {
   padding: 0.5em 0.75em 0.5em 0em;
 }
+
+.menu-list-title {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+}
 /*# sourceMappingURL=app.css.map */

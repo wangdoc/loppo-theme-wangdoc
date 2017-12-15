@@ -1,6 +1,6 @@
 <nav class="panel panel-menu">
   <p class="panel-heading">
-    <%= site %>
+    <i class="fa fa-book" aria-hidden="true"></i> <%= site %>
   </p>
   <div class="panel-block">
   <aside class="menu">
@@ -19,7 +19,9 @@
             <i class="fa fa-caret-down"></i>
           <% } %>
           </span>
-            <%= i.text %>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            &nbsp;
+            <span class="menu-list-title"><%= i.text %></span>
           </a>
         <% if (i.nextLevelBegins) { %>
       <ul>

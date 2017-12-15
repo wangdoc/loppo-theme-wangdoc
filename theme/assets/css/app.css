@@ -10868,6 +10868,10 @@ article.content h3:hover a {
 
 /* menu */
 .panel-menu .panel-block {
-  padding: 0.5em 0.75em 0.5em 0em;
+  padding: 0.5em 0.75em 0.5em -0.1em;
+}
+
+.panel-menu .panel-block .menu-list a.is-active {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=app.css.map */

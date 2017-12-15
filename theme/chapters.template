@@ -19,7 +19,7 @@
             <i class="fa fa-caret-down"></i>
           <% } %>
           </span>
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <i class="fa fa-file-text-o" aria-hidden="true" style="width: 14px;"></i>
             &nbsp;
             <span class="menu-list-title"><%= i.text %></span>
           </a>

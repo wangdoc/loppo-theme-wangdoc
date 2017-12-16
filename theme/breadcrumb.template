@@ -1,4 +1,4 @@
-<nav class="breadcrumb" aria-label="breadcrumbs">
+<nav class="breadcrumb is-size-5-desktop" aria-label="breadcrumbs">
   <ul>
     <% breadcrumbOrigin.forEach((item, i) => { %>
 

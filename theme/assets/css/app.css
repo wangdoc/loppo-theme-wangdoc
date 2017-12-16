@@ -10810,7 +10810,9 @@ article .page-meta {
 }
 
 article .page-meta p {
-  color: #209cee;
+  color: #b5b5b5;
+  text-align: right;
+  font-size: 85%;
 }
 
 /*

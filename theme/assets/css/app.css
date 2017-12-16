@@ -10823,6 +10823,7 @@ article .page-meta p {
 
 .page-info p {
   color: #b5b5b5;
+  line-height: 2;
 }
 
 /*
@@ -10897,6 +10898,7 @@ article .page-meta p {
 }
 
 .panel-menu .panel-block .menu-list a.is-active {
-  background-color: #dbdbdb;
+  color: #4a4a4a;
+  background-color: whitesmoke;
 }
 /*# sourceMappingURL=app.css.map */

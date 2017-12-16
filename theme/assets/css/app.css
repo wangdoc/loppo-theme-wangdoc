@@ -10805,6 +10805,14 @@ article.content h3:hover a {
   display: inline;
 }
 
+article .page-meta {
+  margin: 1em auto;
+}
+
+article .page-meta p {
+  color: #209cee;
+}
+
 /*
  * breadcrumb icon
  */

@@ -23,6 +23,10 @@
       <% } %>
     </article>
     <% include pre-next %>
+    <div class="page-info is-size-5-desktop">
+      <p>本教程采用<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">知识共享 署名-相同方式共享 3.0协议</a>。</p>
+      <p>最后生成于 <%= (new Date()).toLocaleDateString('zh-CN', {timeZone: 'Asia/Shanghai', hour12: false, year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'}) %></p>
+    </div>
   </div>
 
   <div class="column is-3 is-offset-1">

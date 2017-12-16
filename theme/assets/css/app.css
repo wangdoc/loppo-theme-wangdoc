@@ -10815,6 +10815,16 @@ article .page-meta p {
   font-size: 85%;
 }
 
+/* page info */
+.page-info {
+  border-top: 1px solid #b5b5b5;
+  padding-top: 1em;
+}
+
+.page-info p {
+  color: #b5b5b5;
+}
+
 /*
  * breadcrumb icon
  */

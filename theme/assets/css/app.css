@@ -10897,6 +10897,6 @@ article .page-meta p {
 }
 
 .panel-menu .panel-block .menu-list a.is-active {
-  opacity: 0.75;
+  background-color: #dbdbdb;
 }
 /*# sourceMappingURL=app.css.map */

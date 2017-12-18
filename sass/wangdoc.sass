@@ -121,9 +121,15 @@ article .page-meta
 .panel-menu .panel-block
   padding: 0.5em 0.75em 0.5em 0em;
   padding-left: 0em;
+  .menu
+    width: 100%
   .menu-list
     a
       padding-left: 0em;
+      display: flex;
+      word-break: break-all;
+      .menu-list-title
+        width: calc(100% - 1.5rem - 14px - 8px)
     a.is-active
       color: $grey-dark
       background-color: $white-ter

@@ -58,7 +58,6 @@ article .page-meta
     font-size: 85%
 
 /* page info */
-
 .page-info
   border-top: 1px solid $grey-light
   padding-top: 1em
@@ -116,6 +115,11 @@ article .page-meta
 .article-toc > ul > li > ul > li::before
   counter-increment: articleTOCSecondLevel;
   content: counter(articleTOCFirstLevel) '.' counter(articleTOCSecondLevel) ' ';
+
+/* comments */
+#disqus_thread
+  border-top: 1px solid $grey-light
+  padding-top: 1em
 
 /* menu */
 .panel-menu .panel-block

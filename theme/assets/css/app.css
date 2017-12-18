@@ -10887,6 +10887,12 @@ article .page-meta p {
   content: counter(articleTOCFirstLevel) "." counter(articleTOCSecondLevel) " ";
 }
 
+/* comments */
+#disqus_thread {
+  border-top: 1px solid #b5b5b5;
+  padding-top: 1em;
+}
+
 /* menu */
 .panel-menu .panel-block {
   padding: 0.5em 0.75em 0.5em 0em;

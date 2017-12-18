@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "npm run build-css && npm run build-js && git add -A",
-    "postpublish": "npm run update-bulma",
+    "postversion": "npm run update-bulma",
     "update-bulma": "npm update bulma && cp -rf ./node_modules/bulma/bulma.sass ./node_modules/bulma/sass .",
     "clean-css": "rm -rf ./theme/assets/css/*",
     "build-css": "npm run clean-css && npm run build-sass && npm run build-autoprefix && npm run build-uglify",

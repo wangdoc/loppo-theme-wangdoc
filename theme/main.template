@@ -13,14 +13,14 @@
     <% } %>
     <article class="content is-size-4-desktop">
       <% if (isHomepage) { %>
-        <%= content %>
+        <h1 class="title"><%= site %></h1>
       <% } else { %>
         <h1 class="title"><%= page_title %></h1>
-        <div class="page-meta">
-          <p>出自网道（WangDoc.com），互联网开发文档</p>
-        </div>
-        <%= content %>
       <% } %>
+      <div class="page-meta">
+        <p>出自网道（WangDoc.com），互联网开发文档</p>
+      </div>
+      <%= content %>
     </article>
     <% include pre-next %>
     <div class="page-info is-size-5-desktop">

@@ -7,8 +7,8 @@
 
 <div class="columns">
   <div class="column is-8">
-    <% include breadcrumb %>
     <% if (!isHomepage) { %>
+      <% include breadcrumb %>
       <% include pre-next %>
     <% } %>
     <article class="content is-size-4-desktop">

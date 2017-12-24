@@ -3,7 +3,7 @@
     <% breadcrumbOrigin.forEach((item, i) => { %>
 
     <% if (i === 0) { %>
-      <% item.text = "首页"; %>
+      <% item.text = '&nbsp;' + site; %>
     <% } %>
 
     <% if (i === breadcrumbOrigin.length - 1) { %>

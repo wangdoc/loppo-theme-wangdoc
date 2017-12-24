@@ -38,7 +38,6 @@
   </div>
 </nav>
 
-<% if (!isHomepage) { %>
 <nav class="panel panel-info">
   <p class="panel-heading">
     <i class="fa fa-link" aria-hidden="true"></i> 链接
@@ -48,11 +47,13 @@
   <p class="menu-label">
   </p>
   <ul class="menu-list">
+    <% if (!isHomepage) { %>
     <li>
       <a href="https://raw.githubusercontent.com/wangdoc/<%= id %>-tutorial/master/docs/<%= current_path %>" target="_blank">
       <span class="icon"></span><i class="fa fa-code" aria-hidden="true" style="width: 14px;"></i>&nbsp;本文源码
       </a>
     </li>
+    <% } %>
     <li>
       <a href="https://github.com/wangdoc/<%= id %>-tutorial" target="_blank">
       <span class="icon"></span><i class="fa fa-hdd-o" aria-hidden="true" style="width: 14px;"></i>&nbsp;代码仓库
@@ -67,4 +68,3 @@
   </aside>
   </div>
 </nav>
-<% } %>

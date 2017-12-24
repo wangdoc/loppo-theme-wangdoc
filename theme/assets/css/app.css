@@ -10815,6 +10815,12 @@ article .page-meta p {
   font-size: 85%;
 }
 
+article .page-meta p a,
+article .page-meta p a:hover {
+  color: #b5b5b5;
+  cursor: default;
+}
+
 /* page info */
 .page-info {
   border-top: 1px solid #b5b5b5;

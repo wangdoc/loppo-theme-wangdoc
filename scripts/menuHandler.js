@@ -25,6 +25,8 @@ function menuHandler(e) {
       if (activeLi.querySelector('ul')) {
         activeLi.querySelector('.icon i').classList.remove('fa-caret-right');
         activeLi.querySelector('.icon i').classList.add('fa-caret-down');
+        activeLi.querySelector('.folder').classList.remove('fa-folder-o');
+        activeLi.querySelector('.folder').classList.add('fa-folder-open-o');
         activeLi.querySelector('ul').style.display = 'block';
       }
       if (firstLevel.indexOf(activeLi) < 0) {
@@ -43,13 +45,18 @@ function menuHandler(e) {
       e.preventDefault();
       const icon = e.target;
       const childList = icon.parentNode.parentNode.nextElementSibling;
+      const folderIcon = icon.parentNode.nextElementSibling;
       if (icon.classList.contains('fa-caret-right')) {
         icon.classList.remove('fa-caret-right');
         icon.classList.add('fa-caret-down');
+        folderIcon.classList.remove('fa-folder-o');
+        folderIcon.classList.add('fa-folder-open-o');
         childList.style.display = 'block';
       } else {
         icon.classList.add('fa-caret-right');
         icon.classList.remove('fa-caret-down');
+        folderIcon.classList.remove('fa-folder-open-o');
+        folderIcon.classList.add('fa-folder-o');
         childList.style.display = 'none';
       }
     }, true);

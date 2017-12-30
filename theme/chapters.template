@@ -19,7 +19,11 @@
             <i class="fa fa-caret-down"></i>
           <% } %>
           </span>
+          <% if (i.nextLevelBegins) { %>
+            <i class="fa folder fa-folder-o" aria-hidden="true" style="width: 14px;"></i>
+          <% } else { %>
             <i class="fa fa-file-text-o" aria-hidden="true" style="width: 14px;"></i>
+          <% } %>
             &nbsp;
             <span class="menu-list-title"><%= i.text %></span>
           </a>

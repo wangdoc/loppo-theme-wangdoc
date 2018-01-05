@@ -18,3 +18,6 @@ window.onhashchange = hashChange;
 
 /* menu handler */
 menuHandler();
+
+/* toc controller */
+require('./tocHide');

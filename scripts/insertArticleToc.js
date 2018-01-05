@@ -7,7 +7,7 @@ function insertArticleToc() {
   if (firstH2Title && LOPPO.article_toc && h2TitleNumber.length >= 2) {
     var toc_div = document.createElement('div');
     toc_div.setAttribute('class', 'article-toc');
-    toc_div.innerHTML = '<h3>目录</h3>' + LOPPO.article_toc;
+    toc_div.innerHTML = '<h3>目录 [<span class="toc-controller toc-controller-show"><a>隐藏</a></span>]</h3>' + LOPPO.article_toc;
     article.insertBefore(toc_div, firstH2Title);
   }
 }

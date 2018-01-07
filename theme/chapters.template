@@ -51,7 +51,7 @@
   <p class="menu-label">
   </p>
   <ul class="menu-list">
-    <% if (!isHomepage) { %>
+    <% if ((!isHomepage) && current_path.substr(-1) !== '/') { %>
     <li>
       <a href="https://raw.githubusercontent.com/wangdoc/<%= id %>-tutorial/master/docs/<%= current_path %>" target="_blank">
       <span class="icon"></span><i class="fa fa-code" aria-hidden="true" style="width: 14px;"></i>&nbsp;本文源码

@@ -19,6 +19,7 @@
       <% } %>
       <div class="page-meta">
         <p>出自网道（WangDoc.com），互联网开发文档</p>
+        <p class="social-share"></p>
       </div>
       <%= content %>
     </article>

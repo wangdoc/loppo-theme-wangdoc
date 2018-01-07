@@ -1,6 +1,7 @@
 (function () {
   var controller = document.querySelector('.toc-controller');
   var toc = document.querySelector('.article-toc .markdownIt-TOC');
+  if (!controller || !toc) return;
   controller.addEventListener('click', (e) => {
     e.preventDefault();
     if (controller.classList.contains('toc-controller-show')) {

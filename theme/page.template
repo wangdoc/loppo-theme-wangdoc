@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="<%= relative_root_path %>assets/css/app.min.css">
     <link rel="stylesheet" href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.css">
     <!-- link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"-->
+    <!-- link rel="stylesheet" href="<%= relative_root_path %>assets/css/share.min.css" -->
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<%= page_title %>" />
   </head>
   <body>
     <% include nav %>

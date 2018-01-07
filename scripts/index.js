@@ -21,3 +21,6 @@ menuHandler();
 
 /* toc controller */
 require('./tocHide');
+
+/* social share utilities */
+require('./social-share');

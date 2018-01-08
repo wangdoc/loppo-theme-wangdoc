@@ -19,7 +19,6 @@
       <% } %>
       <div class="page-meta">
         <p>出自网道（WangDoc.com），互联网开发文档</p>
-        <p class="social-share"></p>
       </div>
       <%= content %>
     </article>
@@ -27,6 +26,7 @@
     <div class="page-info is-size-5-desktop">
       <p>本教程采用<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">知识共享 署名-相同方式共享 3.0协议</a>。</p>
       <p>最后生成于 <%= (new Date()).toLocaleDateString('zh-CN', {timeZone: 'Asia/Shanghai', hour12: false, year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'}) %></p>
+      <p>分享本文 <span class="social-share"></span></p>
     </div>
   </div>
 

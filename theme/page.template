@@ -12,6 +12,7 @@
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<%= page_title %>" />
+    <% include favicon %>
   </head>
   <body>
     <% include nav %>

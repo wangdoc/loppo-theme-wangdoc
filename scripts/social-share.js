@@ -677,7 +677,7 @@ var QRCode;
         diandian: 'http://www.diandian.com/share?lo={{URL}}&ti={{TITLE}}&type=link',
         linkedin: 'http://www.linkedin.com/shareArticle?mini=true&ro=true&title={{TITLE}}&url={{URL}}&summary={{SUMMARY}}&source={{SOURCE}}&armin=armin',
         facebook: 'https://www.facebook.com/sharer/sharer.php?u={{URL}}',
-        twitter: 'https://twitter.com/intent/tweet?text={{TITLE}}&url={{URL}}&via={{ORIGIN}}',
+        twitter: 'https://twitter.com/intent/tweet?text={{TITLE}}&url={{URL}}',
         google: 'https://plus.google.com/share?url={{URL}}'
     };
 

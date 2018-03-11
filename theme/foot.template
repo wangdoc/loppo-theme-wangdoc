@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        联系：contact@wangdoc.com / Build by <a target="_blank" href="https://github.com/ruanyf/loppo">Loppo <%= loppo_version %></a>
+        联系：contact@wangdoc.com
       </p>
     </div>
   </div>

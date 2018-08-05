@@ -12,7 +12,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output theme/assets/css/app.css theme/assets/css/app.css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/wangdoc.sass theme/assets/css/app.css",
     "build-uglify": "cleancss --source-map -o theme/assets/css/app.min.css theme/assets/css/app.css",
-    "build-js": "mkdir -p theme/assets/js && browserify scripts/index.js | uglifyjs -c > theme/assets/js/app.js",
+    "build-js": "mkdir -p theme/assets/js && browserify -g uglifyify scripts/index.js > theme/assets/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,14 +28,14 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.2.4",
-    "browserify": "^15.0.0",
-    "bulma": "^0.6.2",
-    "clean-css-cli": "^4.1.10",
+    "autoprefixer": "^9.1.0",
+    "browserify": "^16.2.2",
+    "bulma": "^0.7.1",
+    "clean-css-cli": "^4.2.0",
     "husky": "^0.14.3",
-    "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0",
     "rimraf": "^2.6.2",
-    "uglifyify": "^4.0.5"
+    "uglifyify": "^5.0.1"
   }
 }

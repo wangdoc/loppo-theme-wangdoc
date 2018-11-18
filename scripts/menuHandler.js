@@ -41,9 +41,10 @@ function menuHandler(e) {
   const icons = [].slice.call(document.querySelectorAll('.menu li a .icon i'));
   for (let i = 0; i < icons.length; i++) {
     let icon = icons[i];
-    icon.addEventListener('click', (e) => {
+    const icon_container = icon.parentNode;
+    icon_container.addEventListener('click', (e) => {
       e.preventDefault();
-      const icon = e.target;
+      const icon = e.target.querySelector('i') || e.target;
       const childList = icon.parentNode.parentNode.nextElementSibling;
       const folderIcon = icon.parentNode.nextElementSibling;
       if (icon.classList.contains('fa-caret-right')) {

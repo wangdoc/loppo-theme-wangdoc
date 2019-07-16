@@ -1,6 +1,6 @@
 {
   "name": "loppo-theme-wangdoc",
-  "version": "0.3.14",
+  "version": "0.3.15",
   "description": "a theme of Loppo used by Wangdoc",
   "main": "index.js",
   "scripts": {

@@ -4,7 +4,6 @@
   "description": "a theme of Loppo used by Wangdoc",
   "main": "index.js",
   "scripts": {
-    "precommit": "npm run build-css && npm run build-js && git add -A",
     "postversion": "npm run update-bulma",
     "update-bulma": "npm update bulma && cp -rf ./node_modules/bulma/bulma.sass ./node_modules/bulma/sass .",
     "clean-css": "rm -rf ./theme/assets/css/*",
@@ -14,6 +13,11 @@
     "build-uglify": "cleancss --source-map -o theme/assets/css/app.min.css theme/assets/css/app.css",
     "build-js": "mkdir -p theme/assets/js && browserify -g uglifyify scripts/index.js > theme/assets/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build-css && npm run build-js && git add -A"
+    }
   },
   "keywords": [
     "loppo",
@@ -30,12 +34,12 @@
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browserify": "^16.3.0",
-    "bulma": "^0.7.5",
+    "bulma": "^0.8.2",
     "clean-css-cli": "^4.3.0",
-    "husky": "3.x",
+    "husky": "^4.2.5",
     "node-sass": "^4.12.0",
-    "postcss-cli": "^6.1.3",
-    "rimraf": "^2.6.3",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "3.x",
     "uglifyify": "^5.0.1"
   }
 }

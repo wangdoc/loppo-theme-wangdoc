@@ -1,6 +1,7 @@
 var setMinHeight = require('./setMinHeight');
 var insertArticleToc = require('./insertArticleToc');
 var hashChange = require('./hashChange');
+var navbarHandler = require('./navbarHandler');
 var menuHandler = require('./menuHandler');
 var goTop = require('./goTop');
 var support = require('./support');
@@ -16,6 +17,9 @@ insertArticleToc();
 
 /* hashchange handler */
 window.onhashchange = hashChange;
+
+/* navabar handler */
+navbarHandler();
 
 /* menu handler */
 menuHandler();

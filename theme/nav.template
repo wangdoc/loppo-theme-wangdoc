@@ -5,13 +5,13 @@
       网道 / WangDoc.com
     </a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
       <a class="navbar-item is-hidden-desktop-only" target="_blank" href="https://github.com/wangdoc/<%= id %>-tutorial">
         <span class="icon" style="color: #333;">

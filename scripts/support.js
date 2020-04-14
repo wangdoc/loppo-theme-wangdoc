@@ -1,8 +1,11 @@
 module.exports = function () {
-  fetch('/wangdoc.com/assets/js/s.js')
-  .then(response => response.text())
+  fetch('/assets/js/s.js')
+  .then(response => {
+    if (response.status !== 200) throw new Error('load support script failed');
+    return response.text();
+  })
   .then(data => {
-    const s = new Function(data);
+    var s = new Function(data);
     s();
   })
   .catch(e => console.log(e));

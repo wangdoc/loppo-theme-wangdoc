@@ -4,6 +4,12 @@
     <a href="/" class="navbar-item title has-text-grey has-text-weight-light is-5">
       网道 / WangDoc.com
     </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
   <div class="navbar-menu">
     <div class="navbar-end">

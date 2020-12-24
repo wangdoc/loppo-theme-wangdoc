@@ -32,13 +32,14 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "browserify": "^16.3.0",
-    "bulma": "^0.8.2",
+    "autoprefixer": "10.x",
+    "browserify": "17.x",
+    "bulma": "^0.9.1",
     "clean-css-cli": "^4.3.0",
-    "husky": "^4.2.5",
-    "node-sass": "^4.12.0",
-    "postcss-cli": "^7.1.0",
+    "husky": "^4.3.6",
+    "node-sass": "5.x",
+    "postcss": "^8.2.1",
+    "postcss-cli": "8.x",
     "rimraf": "3.x",
     "uglifyify": "^5.0.1"
   }

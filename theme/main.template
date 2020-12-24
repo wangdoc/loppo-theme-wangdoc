@@ -11,7 +11,7 @@
       <% include breadcrumb %>
       <% include pre-next %>
     <% } %>
-    <article class="content is-size-4-desktop">
+    <article class="content is-size-4-widescreen">
       <% if (isHomepage) { %>
         <h1 class="title"><%= site %></h1>
       <% } else { %>
@@ -23,7 +23,7 @@
       <%= content %>
     </article>
     <% include pre-next %>
-    <div class="page-info is-size-5-desktop">
+    <div class="page-info is-size-5-widescreen">
       <p>本教程采用<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">知识共享 署名-相同方式共享 3.0协议</a>。</p>
       <p>分享本文 <span class="social-share"></span></p>
     </div>

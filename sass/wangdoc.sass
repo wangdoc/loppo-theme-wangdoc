@@ -166,5 +166,19 @@ article .page-meta
       .icon
         margin-top: -4px;
 
+/* menu counter */
+.menu-list
+  counter-reset: chapter section;
+  > li
+    counter-increment: chapter;
+    > a .menu-list-title:before
+      content: ' ' counter(chapter) '. ';
+    > ul
+      counter-reset: section;
+      > li
+        counter-increment: section;
+        > a .menu-list-title:before
+          content: ' ' counter(chapter) '.' counter(section) ' ';
+
 /* social-share */
 @import "./social.scss"

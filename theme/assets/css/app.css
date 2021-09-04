@@ -12346,6 +12346,31 @@ article .page-meta p a:hover {
   margin-top: -4px;
 }
 
+/* menu counter */
+.menu-list {
+  counter-reset: chapter section;
+}
+
+.menu-list > li {
+  counter-increment: chapter;
+}
+
+.menu-list > li > a .menu-list-title:before {
+  content: " " counter(chapter) ". ";
+}
+
+.menu-list > li > ul {
+  counter-reset: section;
+}
+
+.menu-list > li > ul > li {
+  counter-increment: section;
+}
+
+.menu-list > li > ul > li > a .menu-list-title:before {
+  content: " " counter(chapter) "." counter(section) " ";
+}
+
 /* social-share */
 @font-face {
   font-family: "socialshare";

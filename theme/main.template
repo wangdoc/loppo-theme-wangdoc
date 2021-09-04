@@ -11,7 +11,7 @@
       <% include breadcrumb %>
       <% include pre-next %>
     <% } %>
-    <article class="content is-size-5-widescreen-only">
+    <article class="content is-size-5-widescreen">
       <% if (isHomepage) { %>
         <h1 class="title"><%= site %></h1>
       <% } else { %>

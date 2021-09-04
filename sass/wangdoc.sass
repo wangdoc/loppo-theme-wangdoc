@@ -151,6 +151,7 @@ article .page-meta
   padding: 0.5em 0.75em 0.5em 0em;
   padding-left: 0em;
   .menu
+    font-size: 95%;
     width: 100%
   .menu-list
     a
@@ -172,12 +173,14 @@ article .page-meta
   > li
     counter-increment: chapter;
     > a .menu-list-title:before
+      font-weight: 700;
       content: ' ' counter(chapter) '. ';
     > ul
       counter-reset: section;
       > li
         counter-increment: section;
         > a .menu-list-title:before
+          font-weight: 700;
           content: ' ' counter(chapter) '.' counter(section) ' ';
 
 /* social-share */

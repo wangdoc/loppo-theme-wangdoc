@@ -12320,6 +12320,7 @@ article .page-meta p a:hover {
 
 .panel-menu .panel-block .menu,
 .panel-info .panel-block .menu {
+  font-size: 95%;
   width: 100%;
 }
 
@@ -12356,6 +12357,7 @@ article .page-meta p a:hover {
 }
 
 .menu-list > li > a .menu-list-title:before {
+  font-weight: 700;
   content: " " counter(chapter) ". ";
 }
 
@@ -12368,6 +12370,7 @@ article .page-meta p a:hover {
 }
 
 .menu-list > li > ul > li > a .menu-list-title:before {
+  font-weight: 700;
   content: " " counter(chapter) "." counter(section) " ";
 }
 

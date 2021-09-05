@@ -32,3 +32,7 @@ require('./social-share');
 
 /* loading support script */
 support();
+
+// 重要！
+// 每次更新此脚本，可以打开或关闭下面这行注释，使得脚本长度发生变化
+console.log();

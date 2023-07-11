@@ -9,7 +9,7 @@
     "clean-css": "rm -rf ./theme/assets/css/*",
     "build-css": "npm run clean-css && npm run build-sass && npm run build-autoprefix && npm run build-uglify",
     "build-autoprefix": "postcss --use autoprefixer --map false --output theme/assets/css/app.css theme/assets/css/app.css",
-    "build-sass": "node-sass --output-style expanded --source-map true sass/wangdoc.sass theme/assets/css/app.css",
+    "build-sass": "sass --style expanded sass/wangdoc.sass theme/assets/css/app.css",
     "build-uglify": "cleancss --source-map --with-rebase -o theme/assets/css/app.min.css theme/assets/css/app.css",
     "build-js": "mkdir -p theme/assets/js && browserify -g uglifyify scripts/index.js > theme/assets/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -37,10 +37,9 @@
     "bulma": "^0.9.3",
     "clean-css-cli": "^5.3.3",
     "husky": "4.3.8",
-    "node-sass": "5.x",
+    "sass": "1.x",
     "postcss": "^8.3.6",
-    "postcss-cli": "8.x",
-    "rimraf": "3.x",
+    "postcss-cli": "10.x",
     "uglifyify": "^5.0.1"
   }
 }

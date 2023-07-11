@@ -26,32 +26,32 @@
  * article font
  */
 .article
-  line-height: 1.6;
-  letter-spacing: 0.04rem;
+  line-height: 1.6
+  letter-spacing: 0.04rem
 
 
 /*
  * article title counter
  */
 .article .content
-  counter-reset: firstLevelTitle;
+  counter-reset: firstLevelTitle
 
 .article .content > h2::before
-  counter-increment: firstLevelTitle;
-  content: counter(firstLevelTitle) '. ';
+  counter-increment: firstLevelTitle
+  content: counter(firstLevelTitle) '. '
 
 .article .content > h2:only-of-type::before
-  content: '';
+  content: ''
 
 .article .content > h2
-  counter-reset: secondLevelTitle;
+  counter-reset: secondLevelTitle
 
 .article .content > h3::before
-  counter-increment: secondLevelTitle;
-  content: counter(firstLevelTitle) '.' counter(secondLevelTitle) ' ';
+  counter-increment: secondLevelTitle
+  content: counter(firstLevelTitle) '.' counter(secondLevelTitle) ' '
 
 .article .content .first-level-collapse
-  display: none;
+  display: none
 
 /*
  * article-title
@@ -108,37 +108,37 @@ article .page-meta
  * article-toc
  */
 .article-toc
-  border: 1px solid #aaa;
-  background-color: #f9f9f9;
-  display: table;
-  padding: 1rem;
+  border: 1px solid #aaa
+  background-color: #f9f9f9
+  display: table
+  padding: 1rem
 
 .article-toc ul
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem
+  margin-right: 0.5rem
 
 .article-toc > ul
-  counter-reset: articleTOCFirstLevel;
+  counter-reset: articleTOCFirstLevel
 
 .article-toc > ul > li
-  list-style-type: none;
-  counter-reset: articleTOCSecondLevel;
+  list-style-type: none
+  counter-reset: articleTOCSecondLevel
 
 .article-toc > ul > li::before
-  counter-increment: articleTOCFirstLevel;
-  content: counter(articleTOCFirstLevel) '. ';
+  counter-increment: articleTOCFirstLevel
+  content: counter(articleTOCFirstLevel) '. '
 
 .article-toc > ul > li > ul > li
-  list-style-type: none;
+  list-style-type: none
 
 .article-toc > ul > li > ul > li::before
-  counter-increment: articleTOCSecondLevel;
-  content: counter(articleTOCFirstLevel) '.' counter(articleTOCSecondLevel) ' ';
+  counter-increment: articleTOCSecondLevel
+  content: counter(articleTOCFirstLevel) '.' counter(articleTOCSecondLevel) ' '
 
 .toc-controller
   font-size: 80%
   a
-    display: inline-block!important;
+    display: inline-block!important
 
 .markdownIt-TOC
   animation: fadein 1s
@@ -157,16 +157,16 @@ article .page-meta
 /* menu */
 .panel-menu .panel-block,
 .panel-info .panel-block
-  padding: 0.5em 0.75em 0.5em 0em;
-  padding-left: 0em;
+  padding: 0.5em 0.75em 0.5em 0em
+  padding-left: 0em
   .menu
-    font-size: 95%;
+    font-size: 95%
     width: 100%
   .menu-list
     a
-      padding-left: 0em;
-      display: flex;
-      word-break: break-all;
+      padding-left: 0em
+      display: flex
+      word-break: break-all
       .menu-list-title
         width: calc(100% - 1.5rem - 14px - 8px)
     a.is-active
@@ -174,23 +174,23 @@ article .page-meta
       background-color: $white-ter
     li
       .icon
-        margin-top: -4px;
+        margin-top: -4px
 
 /* menu counter */
 .menu-list
-  counter-reset: chapter section;
+  counter-reset: chapter section
   > li
-    counter-increment: chapter;
+    counter-increment: chapter
     > a .menu-list-title:before
-      font-weight: 700;
-      content: ' ' counter(chapter) '. ';
+      font-weight: 700
+      content: ' ' counter(chapter) '. '
     > ul
-      counter-reset: section;
+      counter-reset: section
       > li
-        counter-increment: section;
+        counter-increment: section
         > a .menu-list-title:before
-          font-weight: 700;
-          content: ' ' counter(chapter) '.' counter(section) ' ';
+          font-weight: 700
+          content: ' ' counter(chapter) '.' counter(section) ' '
 
 /* social-share */
 @import "./social.scss"

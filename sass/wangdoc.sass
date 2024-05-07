@@ -1,19 +1,20 @@
 // 1. Import the initial variables
-@import "./utilities/initial-variables"
+@use "bulma/sass"
+@use "./highlight.sass"
 
-@import "../bulma"
-@import "./highlight"
+/* social-share */
+@use "./social.scss"
 
 /*
  * main titles
  */
 .main
   h1
-    font-size: $size-1
+    font-size: sass.$size-1
   h2
-    font-size: $size-2
+    font-size: sass.$size-2
   h3
-    font-size: $size-3
+    font-size: sass.$size-3
 
 /*
  * navbar
@@ -68,20 +69,20 @@ article.content h3:hover a
 article .page-meta
   margin: 1em auto
   p
-    color: $grey-light
+    color: var(--bulma-grey-light)
     text-align: right
     font-size: 85%
     a,
     a:hover
-      color: $grey-light
+      color: var(--bulma-grey-light)
       cursor: default
 
 /* page info */
 .page-info
-  border-top: 1px solid $grey-light
+  border-top: 1px solid var(--bulma-grey-light)
   padding-top: 1em
   p
-    color: $grey-light
+    color: var(--bulma-grey-light)
     line-height: 2
 
 /*
@@ -98,7 +99,7 @@ article .page-meta
  */
 .level-previous-next
   padding: 1em
-  background: $light
+  background: var(--bulma-light)
   .level-left, .level-right
     width: 48%
     overflow: hidden
@@ -151,7 +152,7 @@ article .page-meta
 
 /* comments */
 #disqus_thread
-  border-top: 1px solid $grey-light
+  border-top: 1px solid sass.$grey-light
   padding-top: 1em
 
 /* menu */
@@ -170,8 +171,8 @@ article .page-meta
       .menu-list-title
         width: calc(100% - 1.5rem - 14px - 8px)
     a.is-active
-      color: $grey-dark
-      background-color: $white-ter
+      color: sass.$grey-dark
+      background-color: sass.$white-ter
     li
       .icon
         margin-top: -4px
@@ -192,5 +193,4 @@ article .page-meta
           font-weight: 700
           content: ' ' counter(chapter) '.' counter(section) ' '
 
-/* social-share */
-@import "./social.scss"
+

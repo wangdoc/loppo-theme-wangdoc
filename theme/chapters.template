@@ -1,4 +1,4 @@
-<nav class="panel panel-menu">
+<nav class="panel panel-menu is-light">
   <p class="panel-heading">
     <i class="fa fa-book" aria-hidden="true"></i> <%= site %>
   </p>
@@ -42,7 +42,7 @@
   </div>
 </nav>
 
-<nav class="panel panel-info">
+<nav class="panel panel-info is-light">
   <p class="panel-heading">
     <i class="fa fa-link" aria-hidden="true"></i> 链接
   </p>

@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 @font-face {font-family: "socialshare";
   src: url('../fonts/iconfont.eot'); /* IE9*/
   src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -140,3 +141,4 @@
   .icon-wechat .wechat-qrcode:after{content:'';position:absolute;left:50%;margin-left:-6px;bottom:-13px;width:0;height:0;border-width:8px 6px 6px 6px;border-style:solid;border-color:#fff transparent transparent transparent}
   .icon-wechat:hover .wechat-qrcode{display: block;}
 }
+/* purgecss end ignore */

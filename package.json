@@ -4,19 +4,13 @@
   "description": "a theme of Loppo used by Wangdoc",
   "main": "index.js",
   "scripts": {
-    "postversion": "npm run update-bulma",
-    "update-bulma": "npm update bulma",
     "clean-css": "rm -rf ./theme/assets/css/*",
     "build-css": "npm run clean-css && npm run build-sass && npm run build-postcss",
     "build-postcss": "postcss --output theme/assets/css/app.min.css theme/assets/css/app.css",
     "build-sass": "sass --style expanded --load-path=node_modules sass/wangdoc.sass theme/assets/css/app.css",
     "build-js": "mkdir -p theme/assets/js && browserify -g uglifyify scripts/index.js > theme/assets/js/app.js",
+    "build": "npm run build-css && npm run build-js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build-css && npm run build-js && git add -A"
-    }
   },
   "keywords": [
     "loppo",
@@ -35,7 +29,6 @@
     "browserify": "17.x",
     "bulma": "1.x",
     "cssnano": "^7.0.1",
-    "husky": "4.3.8",
     "postcss": "^8.3.6",
     "postcss-cli": "11.x",
     "postcss-prune-var": "^1.1.2",

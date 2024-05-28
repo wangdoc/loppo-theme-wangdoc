@@ -11,7 +11,7 @@ module.exports = {
       // content: ['js/my.js','*.php'],
       // other wise our aria-selected is removed (like with purgecss online)
       content : [ './theme/*.template' ],
-      safelist: ['main', 'container', 'article', 'nav', 'navbar', 'a', 'hljs', 'pre', 'code', 'h1', 'h2', 'h3', /^article-/, /^page-/, /^menu-/, /^nav-/, /^navbar-/, /^icon-/, /^hljs-/, /^social-/, /^share-/, /^wechat-/],
+      safelist: ['main', 'container', 'article', 'nav', 'navbar', 'a', 'hljs', 'pre', 'code', 'h1', 'h2', 'h3', 'has-dropdown', 'is-hoverable', /^article-/, /^page-/, /^menu-/, /^nav-/, /^navbar-/, /^icon-/, /^hljs-/, /^social-/, /^share-/, /^wechat-/],
     }),
     pruneVar(), // remove unused css variables
     varCompress(), // compress css variables
